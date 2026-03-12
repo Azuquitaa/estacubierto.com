@@ -1,0 +1,252 @@
+{
+  "menu_inicio": "Home",
+  "menu_quienes": "About us",
+  "menu_solucion": "Our solution",
+  "menu_como_funciona": "How it works",
+  "menu_impacto": "Impact",
+  "menu_aliados": "For partners",
+  "menu_equipo": "Team",
+  "menu_novedades": "News",
+  "menu_contacto": "Contact",
+  
+  "hero_badge_360": "We develop 360° inclusive insurance solutions",
+  "hero_titulo_puente": "We are the bridge between stakeholders",
+  "hero_puente_1": "Insurers, governments, fintechs, international cooperation — we build together financial protection systems that reach those who need them most.",
+  "hero_puente_2": "Our work starts from understanding real people: their risks, their contexts, their vulnerabilities. From there we design solutions that not only respond to a crisis, but strengthen resilience before it occurs.",
+  "hero_puente_3": "Protecting the most vulnerable families cannot be achieved alone. It is achieved when the right stakeholders work together.",
+  "hero_subtitulo_migrantes_titulo": "For migrants",
+  "hero_subtitulo_migrantes": "The first insurance designed for migrant communities in Argentina. No long-term residency requirement, in your language, via WhatsApp.",
+  "hero_subtitulo_agricultores_titulo": "For farmers",
+  "hero_subtitulo_agricultores": "We use technology to help insurers, governments and institutions stand with the most vulnerable farmers — protecting the food they grow, the land they work, and the future they build for their families.",
+  "btn_cobertura_corto": "What we can cover in your country with the best insurers in the market?",
+  "btn_especialista_corto": "Talk to a specialist",
+  
+
+  "quienes_stats_1": "years of experience in inclusive insurance in LATAM",
+  "quienes_stats_2": "people insured across the region",
+  "quienes_stats_3": "policy renewal rate — a signal of genuine trust",
+
+  "quienes_badge": "OUR STORY",
+  "quienes_titulo": "10 years building real protection",
+  
+  "quienes_stat_1_numero": "10+",
+  "quienes_stat_1_titulo": "Years of experience",
+  "quienes_stat_1_desc": "in inclusive insurance in LATAM",
+  
+  "quienes_stat_2_numero": "15+",
+  "quienes_stat_2_titulo": "Inclusive insurance projects",
+  "quienes_stat_2_desc": "developed or under development",
+  
+  "quienes_stat_3_numero": "77%",
+  "quienes_stat_3_titulo": "Renewal rate",
+  "quienes_stat_3_desc": "trust that renews year after year",
+  
+  "quienes_parrafo": "EstaCubierto was born from a simple conviction: insurance exists to protect people, but for decades the system left out those who need it most. For over 10 years we have been working on inclusive insurance projects in Latin America, building alongside international organizations, local cooperatives and vulnerable communities the solutions that the traditional market never knew how to offer.",
+  
+  "quienes_hito_badge": "FOUNDATIONAL MILESTONE",
+  "quienes_hito": "We were the creators of the first insurance product for a migrant community in Latin America: Ayllu, designed for the Bolivian community residing in Argentina, with more than 800,000 members. A solution that demonstrated that inclusive insurance is not philanthropy — it is a viable and scalable business model.",
+  
+  "quienes_organizaciones": "Projects and recognitions alongside:",
+
+
+
+  "problema_titulo": "The problem we solve",
+  "problema_stat_1": "people in LATAM without access to insurance",
+  "problema_stat_2": "micro-entrepreneurs, informal workers and migrants on the continent",
+  "problema_stat_3": "of vulnerable rural households with no coverage of any kind",
+  "problema_parrafo": "Traditional insurance was designed for someone else. It is expensive, complex and distributed through channels that don't understand rural life, informal neighborhoods or the migrant experience. As a result, millions of families face climate shocks, crop losses and economic crises every year with no safety net. We have spent a decade changing that.",
+  
+  "problema_titulo_brecha": "The gap we're closing",
+  "problema_stat_1_line1": "people in LATAM",
+  "problema_stat_1_line2": "without insurance access",
+  "problema_stat_2_line1": "micro-entrepreneurs",
+  "problema_stat_2_line2": "informal workers and migrants",
+  "problema_stat_3_line1": "rural households",
+  "problema_stat_3_line2": "with no coverage",
+  "problema_frase": "Traditional insurance was designed for other people. Expensive, complex, inaccessible.",
+
+
+
+  "solucion_titulo": "Coverage designed for you",
+  "solucion_intro": "We don't believe insurance is a luxury product. We believe protection is a right. That's why we develop simple, affordable and fully digital coverage for three segments the traditional market always overlooked.",
+  "solucion_general_titulo": "Protection for what matters every day.",
+  "solucion_general_desc": "Accessible coverage against income loss, accidents, theft or unexpected events that can destabilize a family or small business. Weekly or monthly premiums that adapt to variable incomes.",
+  "solucion_general_items": "Income loss | Personal accidents | Theft or merchandise loss | Basic health assistance",
+  "solucion_climatico_titulo": "When climate strikes, your insurance responds.",
+  "solucion_climatico_desc": "Parametric insurance that activates automatically upon verified climate events. No assessments, no forms, no waiting. The farmer receives compensation before the damage compounds.",
+  "solucion_climatico_items": "Drought | Frost | Hail | Flood | Extreme wind",
+  "solucion_agricola_titulo": "This season's harvest, protected.",
+  "solucion_agricola_desc": "Specific coverage for smallholder farmers protecting their crops, infrastructure and working capital. Available in the farmer's language: Spanish, Quechua or Aymara.",
+  "solucion_agricola_items": "Crop loss | Crop damage | Seed and input loss | Productive infrastructure damage",
+  
+  "whatsapp_funcionalidades_titulo": "Features",
+  "whatsapp_func_1": "Registration and onboarding in minutes",
+  "whatsapp_func_2": "Coverage consultation and policy purchase",
+  "whatsapp_func_3": "Automatic, hyperlocal weather alerts",
+  "whatsapp_func_4": "Policy and active coverage status",
+  "whatsapp_func_5": "Claims initiation and payment tracking",
+  "whatsapp_func_6": "Financial education and agronomic content",
+  "whatsapp_func_7": "Transfer to a human agent when needed",
+
+  "whatsapp_ventajas_titulo": "Benefits",
+  "whatsapp_vent_1": "Available 24/7, no service hours",
+  "whatsapp_vent_2": "Available in more than 50 languages including native languages.",
+  "whatsapp_vent_3": "Low data consumption",
+  "whatsapp_vent_4": "No additional app installation required",
+  "whatsapp_vent_5": "Understands text and audio (voice messages)",
+  "whatsapp_vent_6": "Immediate and personalized responses",
+  "whatsapp_vent_7": "Onboarding in under 5 minutes",
+
+  "whatsapp_cta": "Start now via WhatsApp",
+
+  "para_quien_titulo": "What is your reality?",
+  "perfil_agricultor_titulo": "You work the land. You deserve it to protect you too.",
+  "perfil_agricultor_desc": "If you have a plot of land, work in the fields or are part of an agricultural cooperative, we have climate and agricultural insurance designed exactly for your situation. No paperwork or visits required.",
+  "perfil_agricultor_btn": "I want to protect my harvest",
+  "perfil_microempresario_titulo": "Your business is your livelihood. Protect it.",
+  "perfil_microempresario_desc": "If you run a neighborhood business, work independently or are an informal economy entrepreneur, one unexpected event can unbalance everything you've built. Our general insurance adapts to variable incomes and pays out when you need it most.",
+  "perfil_microempresario_btn": "I want to protect my business",
+  "perfil_migrante_titulo": "You came here to build. You have the right to be protected.",
+  "perfil_migrante_desc": "Living in a new country means facing risks without your usual support network. We have 10 years of experience designing insurance for migrant communities in LATAM. Accessible, multilingual products with no long residency requirements.",
+  "perfil_migrante_btn": "See options for migrants",
+  
+  "whatsapp_titulo": "Everything from WhatsApp",
+  "whatsapp_intro": "Our service channel works where our clients already are: WhatsApp. No additional apps, no offices, no bureaucracy.",
+  "whatsapp_intro2": "Features vary by country.",
+  "whatsapp_funcionalidades": "✓ Registration and onboarding in minutes\n✓ Consultation and contracting coverage\n✓ Automatic hyperlocal climate alerts\n✓ Policy status and active coverage\n✓ Claim initiation and payment tracking\n✓ Financial education and agronomic content\n✓ Referral to human agent when needed",
+  "whatsapp_ventajas": "→ Available 24/7, no office hours\n→ In Spanish, Quechua, Aymara and English\n→ Low data consumption\n→ No additional apps to install\n→ Understands text and audio (voice messages)\n→ Immediate personalized responses\n→ Onboarding in less than 5 minutes",
+  
+  "mapa_con_presencia":"✅ Active",
+  "mapa_proximamente":"Coming soon",
+  "mapa_boton":"🌎 View all Americas",
+  "mapa_titulo":"Our presence in the Americas",
+  "mapa_subtitulo":"Click on highlighted countries for more information",
+
+
+  "impacto_badge": "REAL IMPACT",
+  "impacto_titulo": "A decade of measurable impact",
+  
+  "impacto_stat_1_numero": "15+",
+  "impacto_stat_1_titulo": "Inclusive insurance projects",
+  "impacto_stat_1_desc": "developed or under development",
+  
+  "impacto_stat_2_numero": "77%",
+  "impacto_stat_2_titulo": "Renewal rate",
+  "impacto_stat_2_desc": "trust that renews year after year",
+  
+  "impacto_stat_3_numero": "18%",
+  "impacto_stat_3_titulo": "Profit margin",
+  "impacto_stat_3_desc": "monthly per policy, sustainable and fair",
+  
+  "impacto_parrafo": "In 10 years we learned that real impact is not only measured in policies issued. It is measured in families who sleep peacefully after a hailstorm, in farmers who didn't lose everything to a drought, in migrants who for the first time have a protection network in their new country. That's what we build.",
+  
+  "impacto_ods_titulo": "Aligned with the Sustainable Development Goals",
+  
+  "impacto_ods_1": "No poverty",
+  "impacto_ods_2": "Zero hunger",
+  "impacto_ods_3": "Good health and well-being",
+  "impacto_ods_5": "Gender equality",
+  "impacto_ods_8": "Decent work",
+  "impacto_ods_10": "Reduced inequalities",
+  "impacto_ods_13": "Climate action",
+  
+  "impacto_piloto": "We are currently developing a pilot that articulates parametric insurance with farmer cooperatives and carbon credit certification. A new dimension of impact that we will publish in this section.",
+
+  "impacto_stat_1": "people insured across the region",
+  "impacto_stat_2": "renewal rate — trust that renews itself",
+  "impacto_stat_3": "monthly profitability margin per policy",
+  
+  "aliados_titulo": "Let's build together",
+  "card_aliado_titulo": "Reach the market that traditional channels don't.",
+  "card_aliado_cuerpo": "We have spent 10 years building bridges between the formal insurance system and LATAM's most underserved segments. If you are an insurer, fintech, cooperative or climate data company, we have the technology, distribution and segment knowledge to build products together that actually work.",
+  "card_aliado_btn": "Explore partnerships",
+  "card_inversor_titulo": "10 years of track record. A model ready to scale.",
+  "card_inversor_cuerpo": "The microinsurance market in LATAM is USD 610 million and growing at 3% annually. We have 10 years of experience, 16,000 active clients, 77% renewal rate, projects with IOM, IDB Lab, Ashoka and UNDP, and a B2B2C model that combines measurable social impact with financial sustainability. We are at exactly the right moment to scale with the right resources.",
+  "card_inversor_btn": "View investment deck",
+  
+  "equipo_titulo": "The team behind the solution",
+  "equipo_intro": "We are a team with over 10 years of combined experience in inclusive insurance, technology for emerging markets, and rural finance. We work with international organizations, have won competitive incubators, and built the first insurance product for migrants in LATAM. What drives us is not insurance as an industry — it's the concrete impact on people's lives.",
+  "equipo_cofundadores_titulo": "Co-founders",
+  "equipo_cofundador_cargo": "Co-founder",
+  "equipo_maximiliano_desc": "Inclusive insurance expert. Over a decade designing products for vulnerable populations. Creator of the first insurance for informal workers and the first cross-border insurance for migrants between Argentina and Bolivia. Member of the Microinsurance Network and expert recognized by the ILO.",
+  "equipo_gonzalo_desc": "Lawyer and insurance broker. +20 years in commercial law and insurance. Advisor to the National Insurance Superintendency. Member of the Microinsurance Network and the ILO International Microinsurance Program. Combines legal rigor with strategic vision of the inclusive market.",
+  "equipo_advisors_titulo": "Advisors",
+  "equipo_clemence_cargo": "Actuarial Advisor",
+  "equipo_clemence_desc": "International actuary. +15 years in general insurance and microinsurance. Has provided technical assistance in over 30 countries across Africa, Asia, Latin America, and Europe. Expert in actuarial sciences and product design.",
+  "equipo_gino_cargo": "IT Advisor",
+  "equipo_gino_desc": "Serial entrepreneur. Insurtech leader, merging marketing and technology to revolutionize insurance. Co-founder of LISA, Bella TWIN, and other successful companies. Leverages innovation to transform the insurance world.",
+  "equipo_iris_cargo": "Founding Advisor (Guatemala)",
+  "equipo_iris_desc": "Guatemalan consultant. +30 years in microfinance and financial inclusion. Has advised IDB, IFAD, and UN Women in over 12 countries. Author of technical publications for ECLAC and IFAD. Regional reference in financial inclusion.",
+  "equipo_chile_titulo": "Estacubierto in Chile",
+  "equipo_alonso_cargo": "Business and Alliances Director - Teus SPA",
+  "equipo_alonso_desc": "Entrepreneur and Insurance Broker. Experienced in directing Grupo Activa and as General Manager of Prospect Insurance Brokers Chile. Driver of initiatives in renewable energy and alliances for inclusive insurance with the State-owned Companies System (SEP).",
+  "equipo_elide_cargo": "Operations Director - Teus SPA",
+  "equipo_elide_desc": "Master's in Business Management UAI. Extensive experience in logistics, operations, and production in pharmaceutical, retail, and valuables industries (Brinks, Prosegur). Director of APLOG and member of REDMAD, leading operational excellence.",
+  "equipo_guatemala_titulo": "Estacubierto in Guatemala",
+  "equipo_claudia_cargo": "Founder and Executive Director - IHRM Corredores de Seguros",
+  "equipo_claudia_desc": "Leader with over 20 years in the sector. Founder of IHRM Corredores de Seguros, a firm with 9 years of experience in corporate risk management solutions and insurance brokerage. Holds international certifications such as CIC (Certified Insurance Counselor) and Franklin Covey 4Dx Gold Certification.",
+  "equipo_reconocimientos": "Members of the Microinsurance Network · Projects with IOM, BID Lab, Ashoka and UNDP · Winners of RUS and BID ao CUBO (Brazil) incubators · Recognized at the Hola América Social Innovation Festival (Ashoka + IOM) · Part of the Finnovating ecosystem",
+
+"reconocimientos_titulo":"They endorse our experience",
+"novedades_titulo": "News & Awards",
+  "novedades_subtitulo": "Latest news and awards that endorse our trajectory",
+  
+  "noticias_titulo": "Latest News",
+  "premios_titulo": "Awards & Recognition",
+  
+  "novedades_card1_etiqueta": "NEWS",
+  "novedades_card1_fecha": "Mar 2025",
+  "novedades_card1_titulo": "RUS and Estacubierto.com to open three new microinsurance branches in Rosario",
+  "novedades_card1_extracto": "Expansion of the customer service network with three new branches in strategic locations of the city.",
+  
+  "novedades_card2_etiqueta": "OPENING",
+  "novedades_card2_fecha": "Nov 2024",
+  "novedades_card2_titulo": "RUS and Estacubierto opened a new microinsurance commercial branch",
+  "novedades_card2_extracto": "New service point in Carlos Mugica neighborhood to bring accessible insurance to the community.",
+  
+  "novedades_card3_etiqueta": "EXPANSION",
+  "novedades_card3_fecha": "Sep 2024",
+  "novedades_card3_titulo": "Offices in Carlos Mugica and La Juanita neighborhoods for inclusive insurance",
+  "novedades_card3_extracto": "RUS and Estacubierto are working on opening two offices in underserved neighborhoods of Buenos Aires.",
+  
+  "novedades_btn": "Read full article",
+  "ver_todos_btn": "View all awards",
+  
+  "premio1_titulo": "Selected for the IDB and Itaú Incubation Program",
+  "premio1_desc": "Only insurtech selected among more than 500 Latin American startups in the BID AO CUBO 2021 program.",
+  "premio1_etiqueta": "IDB - ITAÚ 2021",
+  
+  "premio2_titulo": "Conciencia Award for Inclusion and Sustainability",
+  "premio2_desc": "Winners in the Insurance category for the \"Insurance for Equity\" program by RUS and Estacubierto.com.",
+  "premio2_etiqueta": "CONCIENCIA AWARDS 2021",
+  
+  "premio3_titulo": "Insurance Alliance International Award",
+  "premio3_desc": "For \"Insurance for Equity\" + Social Impact Seal from the Buenos Aires City Government for the same program.",
+  "premio3_etiqueta": "INTERNATIONAL RECOGNITION",
+
+  "footer_navegacion": "Home | About us | Our solution | How it works | Impact | For partners | Team | News",
+  "footer_tagline": "Because everyone deserves to be covered.",
+"footer_logo_line": "Estacubierto Inclusive insurance for Latin America.",
+"footer_social_title": "Follow us",
+"footer_nav_inicio": "Home",
+"footer_nav_quienes": "About us",
+"footer_nav_solucion": "Our solution",
+"footer_nav_como": "How it works",
+"footer_nav_impacto": "Impact",
+"footer_nav_aliados": "For partners",
+"footer_nav_equipo": "Team",
+"footer_nav_novedades": "News",
+"footer_newsletter_titulo": "Get updates on inclusive insurance, climate risk and financial inclusion in LATAM.",
+"footer_newsletter_btn": "Subscribe",
+"footer_copyright": "© 2026 EstaCubierto. All rights reserved.",
+"ej_form":"For example: I want information about insurance for my crop.",
+"nota_privacidad":"* Your data is protected",
+"footer_certificado":"Operated by Varese Brokers SRL",
+"footer_matricula":"SSN Registration No. 1405",
+"footer_navegacion_titulo": "Navegation",
+"footer_contacto_titulo": "Contact"
+
+
+
+
+}

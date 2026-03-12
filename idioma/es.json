@@ -1,0 +1,242 @@
+{
+  "menu_inicio": "Inicio",
+  "menu_quienes": "Quiénes somos",
+  "menu_solucion": "Nuestra solución",
+  "menu_como_funciona": "Cómo funciona",
+  "menu_impacto": "Impacto",
+  "menu_aliados": "Para aliados",
+  "menu_equipo": "Equipo",
+  "menu_novedades": "Novedades",
+  "menu_contacto": "Contacto",
+  
+  "hero_badge_360": "Desarrollamos soluciones 360 en seguros inclusivos",
+  "hero_titulo_puente": "Somos el puente entre actores",
+  "hero_puente_1": "Aseguradoras, gobiernos, fintechs, cooperación internacional — construimos juntos sistemas de protección financiera que lleguen a quienes más los necesitan.",
+  "hero_puente_2": "Nuestro trabajo parte de entender a las personas reales: sus riesgos, sus contextos, sus vulnerabilidades. Desde ahí diseñamos soluciones que no solo responden ante una crisis, sino que fortalecen la resiliencia antes de que ocurra.",
+  "hero_puente_3": "Proteger a las familias más vulnerables no se logra en solitario. Se logra cuando los actores correctos trabajan juntos.",
+  "hero_subtitulo_migrantes_titulo": "Para migrantes",
+  "hero_subtitulo_migrantes": "El primer seguro diseñado para comunidades migrantes en Argentina. Sin requisito de residencia prolongada, en tu idioma, desde WhatsApp.",
+  "hero_subtitulo_agricultores_titulo": "Para agricultores",
+  "hero_subtitulo_agricultores": "Usamos tecnología para ayudar a aseguradoras, gobiernos e instituciones a ponerse del lado de los agricultores más vulnerables — protegiendo los alimentos que cultivan, la tierra que trabajan y el futuro que construyen para sus familias.",
+  "btn_cobertura_corto": "¿Qué podemos cubrir en tu país con las mejores aseguradoras del mercado?",
+  "btn_especialista_corto": "Hablá con un especialista",
+
+  "quienes_stats_1": "años de experiencia en seguros inclusivos en LATAM",
+  "quienes_stats_2": "personas aseguradas en la región",
+  "quienes_stats_3": "tasa de renovación de pólizas — señal de confianza real",
+
+  "quienes_badge": "NUESTRA HISTORIA",
+  "quienes_titulo": "10 años construyendo protección real",
+  
+  "quienes_stat_1_numero": "10+",
+  "quienes_stat_1_titulo": "Años de experiencia",
+  "quienes_stat_1_desc": "en seguros inclusivos en LATAM",
+  
+  "quienes_stat_2_numero": "15+",
+  "quienes_stat_2_titulo": "Proyectos de seguros inclusivos",
+  "quienes_stat_2_desc": "desarrollados o en desarrollo",
+
+  "quienes_stat_3_numero": "77%",
+  "quienes_stat_3_titulo": "Tasa de renovación",
+  "quienes_stat_3_desc": "confianza que se renueva año tras año",
+  
+  "quienes_parrafo": "EstaCubierto nació de una convicción simple: los seguros existen para proteger a las personas, pero durante décadas el sistema dejó afuera a quienes más los necesitan. Llevamos más de 10 años trabajando en proyectos de seguros inclusivos en América Latina, construyendo junto a organismos internacionales, cooperativas locales y comunidades vulnerables las soluciones que el mercado tradicional nunca supo ofrecer.",
+  
+  "quienes_hito_badge": "HITO FUNDACIONAL",
+  "quienes_hito": "Fuimos los creadores del primer producto de seguros para una comunidad migrante en América Latina: Ayllu, diseñado para la comunidad boliviana residente en Argentina, con más de 800.000 miembros. Una solución que demostró que el seguro inclusivo no es filantropía — es un modelo de negocio viable y escalable.",
+  
+  "quienes_organizaciones": "Proyectos y reconocimientos junto a:",
+
+
+
+  "problema_titulo": "El problema que resolvemos",
+  "problema_parrafo": "Los seguros tradicionales fueron diseñados para otras personas. Son caros, complejos y llegan a través de canales que no conocen la realidad del campo, del barrio popular ni de la vida migrante. El resultado es que millones de familias enfrentan cada año riesgos climáticos, pérdidas de cosecha y crisis económicas sin ninguna red de protección. Nosotros llevamos una década cambiando eso.",
+  
+  "problema_titulo_brecha": "La brecha que venimos a cerrar",
+  "problema_stat_1_line1": "personas en LATAM",
+  "problema_stat_1_line2": "sin acceso a seguros",
+  "problema_stat_2_line1": "micro-emprendedores",
+  "problema_stat_2_line2": "informales y migrantes",
+  "problema_stat_3_line1": "hogares rurales",
+  "problema_stat_3_line2": "sin ningún tipo de cobertura",
+  "problema_frase": "Los seguros tradicionales fueron diseñados para otras personas. Caros, complejos, inaccesibles.",
+
+  "solucion_titulo": "Coberturas pensadas para vos",
+  "solucion_intro": "No creemos en el seguro como producto de lujo. Creemos en la protección como un derecho. Por eso desarrollamos coberturas simples, asequibles y digitales para tres segmentos que el mercado tradicional siempre ignoró.",
+  "solucion_general_titulo": "Protección para lo que importa en el día a día.",
+  "solucion_general_desc": "Coberturas accesibles frente a pérdidas de ingresos, accidentes, robos o imprevistos que pueden desestabilizar la economía de una familia o un pequeño negocio. Primas semanales o mensuales que se adaptan a ingresos variables.",
+  "solucion_general_items": "Pérdida de ingresos | Accidentes personales | Robo o pérdida de mercadería | Asistencia en salud básica",
+  "solucion_climatico_titulo": "Cuando el clima golpea, el seguro responde.",
+  "solucion_climatico_desc": "Seguros paramétricos que se activan automáticamente ante eventos climáticos verificados. Sin peritaje, sin formularios, sin esperas. El agricultor recibe su compensación antes de que el daño se agrave.",
+  "solucion_climatico_items": "Sequía | Helada | Granizo | Inundación | Viento extremo",
+  "solucion_agricola_titulo": "La cosecha de esta temporada, protegida.",
+  "solucion_agricola_desc": "Coberturas específicas para pequeños productores que protegen sus cultivos, su infraestructura y su capital de trabajo. Disponibles en el idioma del agricultor: español, quechua o aymara.",
+  "solucion_agricola_items": "Pérdida de cosecha | Daño en cultivos | Pérdida de semillas e insumos | Daño en infraestructura productiva",
+  
+  "whatsapp_funcionalidades_titulo": "Funcionalidades",
+"whatsapp_func_1": "Registro y onboarding en minutos",
+"whatsapp_func_2": "Consulta y contratación de coberturas",
+"whatsapp_func_3": "Alertas climáticas automáticas e hiperlocales",
+"whatsapp_func_4": "Estado de pólizas y coberturas vigentes",
+"whatsapp_func_5": "Inicio de claims y seguimiento de pagos",
+"whatsapp_func_6": "Educación financiera y contenido agronómico",
+"whatsapp_func_7": "Derivación a agente humano cuando sea necesario",
+"whatsapp_ventajas_titulo": "Ventajas",
+"whatsapp_vent_1": "Disponible 24/7, sin horarios de atención",
+"whatsapp_vent_2": "Disponible en más de 50 idiomas incluidos idiomas nativos.",
+"whatsapp_vent_3": "Bajo consumo de datos",
+"whatsapp_vent_4": "Sin instalar ninguna aplicación adicional",
+"whatsapp_vent_5": "Entiende texto y audio (mensajes de voz)",
+"whatsapp_vent_6": "Respuestas inmediatas y personalizadas",
+"whatsapp_vent_7": "Onboarding en menos de 5 minutos",
+"whatsapp_cta": "Comenzá ahora por WhatsApp",
+
+  "para_quien_titulo": "¿Cuál es tu realidad?",
+  "perfil_agricultor_titulo": "Trabajás la tierra. Merecés que ella también te cuide.",
+  "perfil_agricultor_desc": "Si tenés una parcela, trabajás en el campo o formás parte de una cooperativa agrícola, tenemos seguros climáticos y agrícolas pensados exactamente para tu situación. Sin papeles ni visitas.",
+  "perfil_agricultor_btn": "Quiero proteger mi cosecha",
+  "perfil_microempresario_titulo": "Tu negocio es tu sustento. Protegelo.",
+  "perfil_microempresario_desc": "Si tenés un negocio en el barrio, sos trabajador independiente o emprendedor de la economía informal, un imprevisto puede desequilibrar todo lo que construiste. Nuestros seguros generales se adaptan a ingresos variables y cobran cuando más lo necesitás.",
+  "perfil_microempresario_btn": "Quiero proteger mi negocio",
+  "perfil_migrante_titulo": "Viniste a construir. Tenés derecho a estar protegido.",
+  "perfil_migrante_desc": "Vivir en un nuevo país significa enfrentar riesgos sin la red de siempre. Tenemos 10 años de experiencia diseñando seguros para comunidades migrantes en LATAM. Productos accesibles, multilingues, sin requisitos de residencia larga.",
+  "perfil_migrante_btn": "Ver opciones para migrantes",
+  
+  "whatsapp_titulo": "Todo desde WhatsApp",
+  "whatsapp_intro": "Nuestro canal de atención funciona donde ya están nuestros clientes: WhatsApp. Sin aplicaciones adicionales, sin oficinas, sin burocracia.",
+  "whatsapp_intro2": "Las funcionalidades varían según el país.",
+  "whatsapp_funcionalidades": "✓ Registro y onboarding en minutos\n✓ Consulta y contratación de coberturas\n✓ Alertas climáticas automáticas e hiperlocales\n✓ Estado de pólizas y coberturas vigentes\n✓ Inicio de claims y seguimiento de pagos\n✓ Educación financiera y contenido agronómico\n✓ Derivación a agente humano cuando sea necesario",
+  "whatsapp_ventajas": "→ Disponible 24/7, sin horarios de atención\n→ En español, quechua, aymara e inglés\n→ Bajo consumo de datos\n→ Sin instalar ninguna aplicación adicional\n→ Entiende texto y audio (mensajes de voz)\n→ Respuestas inmediatas y personalizadas\n→ Onboarding en menos de 5 minutos",
+  
+  "mapa_con_presencia":"✅ Con presencia",
+  "mapa_proximamente":"Próximamente",
+  "mapa_boton":"🌎 Ver toda América",
+  "mapa_titulo":"Nuestra presencia en América",
+
+
+  "impacto_badge": "IMPACTO REAL",
+  "impacto_titulo": "Una década de impacto medible",
+  
+  "impacto_stat_1_numero": "15+",
+  "impacto_stat_1_titulo": "Proyectos de seguros inclusivos",
+  "impacto_stat_1_desc": "desarrollados o en desarrollo",
+  
+  "impacto_stat_2_numero": "77%",
+  "impacto_stat_2_titulo": "Tasa de renovación",
+  "impacto_stat_2_desc": "confianza que se renueva año tras año",
+  
+  "impacto_stat_3_numero": "18%",
+  "impacto_stat_3_titulo": "Margen de rentabilidad",
+  "impacto_stat_3_desc": "mensual por póliza, sostenible y justo",
+  
+  "impacto_parrafo": "En 10 años aprendimos que el impacto real no se mide solo en pólizas emitidas. Se mide en familias que duermen tranquilas después de una granizada, en agricultores que no perdieron todo con una sequía, en migrantes que por primera vez tienen una red de protección en su nuevo país. Eso es lo que construimos.",
+  
+  "impacto_ods_titulo": "Alineados con los Objetivos de Desarrollo Sostenible",
+  
+  "impacto_ods_1": "Fin de la pobreza",
+  "impacto_ods_2": "Hambre cero",
+  "impacto_ods_3": "Salud y bienestar",
+  "impacto_ods_5": "Igualdad de género",
+  "impacto_ods_8": "Trabajo decente",
+  "impacto_ods_10": "Reducción de desigualdades",
+  "impacto_ods_13": "Acción climática",
+  
+  "impacto_piloto": "Actualmente desarrollamos un piloto que articula seguros paramétricos con cooperativas de agricultores y certificación de créditos de carbono. Una nueva dimensión de impacto que publicaremos en esta sección.",
+
+  
+  "impacto_stat_1": "personas aseguradas en la región",
+  "impacto_stat_2": "tasa de renovación — confianza que se renueva",
+  "impacto_stat_3": "margen de rentabilidad mensual por póliza",
+ 
+  "aliados_titulo": "Construyamos juntos",
+  "card_aliado_titulo": "Llegá al mercado que los canales tradicionales no alcanzan.",
+  "card_aliado_cuerpo": "Llevamos 10 años construyendo puentes entre el sistema asegurador formal y los segmentos más desatendidos de LATAM. Si sos aseguradora, fintech, cooperativa o empresa de datos climáticos, tenemos la tecnología, la distribución y el conocimiento de segmento para crear productos juntos que funcionen de verdad.",
+  "card_aliado_btn": "Explorar alianzas",
+  "card_inversor_titulo": "10 años de trayectoria. Un modelo listo para escalar.",
+  "card_inversor_cuerpo": "El mercado de microseguros en LATAM es de USD 610 millones y crece al 3% anual. Tenemos 10 años de experiencia, 16.000 clientes activos, 77% de renovación, proyectos con OIM, BID Lab, Ashoka y PNUD, y un modelo B2B2C que combina impacto social medible con sustentabilidad financiera. Estamos en el momento justo para crecer con los recursos correctos.",
+  "card_inversor_btn": "Ver deck de inversión",
+  
+
+  "equipo_titulo": "El equipo detrás de la solución",
+  "equipo_intro": "Somos un equipo con más de 10 años de experiencia conjunta en seguros inclusivos, tecnología para mercados emergentes y finanzas rurales. Trabajamos con organismos internacionales, ganamos incubadoras competitivas y construimos el primer producto de seguros para migrantes en LATAM. Lo que nos mueve no es el seguro como industria — es el impacto concreto en la vida de las personas.",
+  "equipo_cofundadores_titulo": "Co-fundadores",
+  "equipo_cofundador_cargo": "Co-fundador",
+  "equipo_maximiliano_desc": "Experto en seguros inclusivos. Más de una década diseñando productos para poblaciones vulnerables. Creador del primer seguro para trabajadores informales y el primer seguro para migrantes Argentina-Bolivia. Miembro de la Microinsurance Network y experto reconocido por la OIT.",
+  "equipo_gonzalo_desc": "Abogado y productor de seguros. +20 años en derecho comercial y seguros. Asesor de la Superintendencia de Seguros de la Nación. Miembro de la Microinsurance Network y del Programa Internacional de Microseguros de la OIT. Combina el rigor jurídico con la visión estratégica del mercado inclusivo.",
+  "equipo_advisors_titulo": "Advisors",
+  "equipo_clemence_cargo": "Actuarial Advisor",
+  "equipo_clemence_desc": "Actuaria internacional. +15 años en seguros generales y microseguros. Ha brindado asistencia técnica en más de 30 países de África, Asia, América Latina y Europa. Experta en ciencias actuariales y diseño de productos.",
+  "equipo_gino_cargo": "IT Advisor",
+  "equipo_gino_desc": "Emprendedor en serie. Líder en Insurtech, fusiona marketing y tecnología. Co-fundador de LISA, Bella TWIN y otras compañías exitosas. Apalanca la innovación para revolucionar el mundo de los seguros.",
+  "equipo_iris_cargo": "Founding Advisor (Guatemala)",
+  "equipo_iris_desc": "Consultora guatemalteca. +30 años en microfinanzas e inclusión financiera. Ha asesorado al BID, FIDA y ONU Mujeres en más de 12 países. Autora de publicaciones técnicas para CEPAL y FIDA. Referente regional en inclusión financiera.",
+  "equipo_chile_titulo": "Estacubierto en Chile",
+  "equipo_alonso_cargo": "Director de Negocios y Alianzas - Teus SPA",
+  "equipo_alonso_desc": "Empresario y Corredor de Seguros. Con experiencia en la dirección del Grupo Activa y como Gerente General de Prospect Insurance Brokers Chile. Articulador de iniciativas en energías renovables y alianzas para seguros inclusivos con el Sistema de Empresas Públicas (SEP).",
+  "equipo_elide_cargo": "Dirección Operativa - Teus SPA",
+  "equipo_elide_desc": "Magister en Gestión de Negocios UAI. Amplia experiencia en logística, operaciones y producción en industrias farmacéutica, retail y de valores (Brinks, Prosegur). Directora de APLOG y adherente de REDMAD, liderando la excelencia operativa.",
+  "equipo_guatemala_titulo": "Estacubierto en Guatemala",
+  "equipo_claudia_cargo": "Fundadora y Directora Ejecutiva - IHRM Corredores de Seguros",
+  "equipo_claudia_desc": "Líder con más de 20 años en el sector. Fundadora de IHRM Corredores de Seguros, firma con 9 años de trayectoria en soluciones corporativas de administración de riesgos. Posee certificaciones internacionales como CIC (Certified Insurance Counselor) y Certificación Oro 4Dx de Franklin Covey.",
+  "equipo_reconocimientos": "Miembros de la Microinsurance Network · Proyectos con OIM, BID Lab, Ashoka y PNUD · Ganadores de las incubadoras RUS y BID ao CUBO (Brasil) · Reconocidos en el Festival de Innovaciones Sociales Hola América (Ashoka + OIM) · Parte del ecosistema Finnovating",
+  
+
+"novedades_titulo": "Novedades y reconocimientos",
+  "novedades_subtitulo": "Últimas noticias y premios que avalan nuestra trayectoria",
+  
+  "noticias_titulo": "Últimas noticias",
+  "premios_titulo": "Premios y reconocimientos",
+  
+  "novedades_card1_etiqueta": "NOVEDAD",
+  "novedades_card1_fecha": "Mar 2025",
+  "novedades_card1_titulo": "RUS y Estacubierto.com inaugurarán tres nuevos locales de microseguros en Rosario",
+  "novedades_card1_extracto": "Expansión de la red de atención al cliente con tres nuevas sucursales en puntos estratégicos de la ciudad.",
+  
+  "novedades_card2_etiqueta": "APERTURA",
+  "novedades_card2_fecha": "Nov 2024",
+  "novedades_card2_titulo": "RUS y Estacubierto inauguraron un nuevo local comercial de microseguros",
+  "novedades_card2_extracto": "Nuevo punto de atención en el barrio Carlos Mugica para acercar seguros accesibles a la comunidad.",
+  
+  "novedades_card3_etiqueta": "EXPANSIÓN",
+  "novedades_card3_fecha": "Sep 2024",
+  "novedades_card3_titulo": "Oficinas en barrios Carlos Mugica y La Juanita para seguros inclusivos",
+  "novedades_card3_extracto": "RUS y Estacubierto trabajan en la apertura de dos oficinas en barrios populares de Buenos Aires.",
+  
+  "novedades_btn": "Leer noticia completa",
+  "ver_todos_btn": "Ver todos los reconocimientos",
+  
+  "premio1_titulo": "Seleccionados en el programa de Incubación del BID y Banco Itaú",
+  "premio1_desc": "Única insurtech seleccionada entre más de 500 startups de Latinoamérica en el programa BID AO CUBO 2021.",
+  "premio1_etiqueta": "BID - ITAÚ 2021",
+  
+  "premio2_titulo": "Premio Conciencia en Inclusión y Sustentabilidad",
+  "premio2_desc": "Ganadores categoría Seguros por el programa \"Seguros por la Equidad\" de RUS y Estacubierto.com.",
+  "premio2_etiqueta": "PREMIOS CONCIENCIA 2021",
+  
+  "premio3_titulo": "Premio Internacional de la Alianza del Seguro",
+  "premio3_desc": "Por \"Seguros por la Equidad\" + Sello de Impacto Social del Gobierno de CABA por el mismo programa.",
+  "premio3_etiqueta": "RECONOCIMIENTO INTERNACIONAL",
+  
+  
+  "footer_navegacion": "Inicio | Quiénes somos | Nuestra solución | Cómo funciona | Impacto | Para aliados | Equipo | Novedades",
+  "footer_tagline": "Porque todos podemos estar cubiertos.",
+"footer_logo_line": "Estacubierto Seguros inclusivos para América Latina.",
+"footer_social_title": "Seguinos en redes",
+"footer_nav_inicio": "Inicio",
+"footer_nav_quienes": "Quiénes somos",
+"footer_nav_solucion": "Nuestra solución",
+"footer_nav_como": "Cómo funciona",
+"footer_nav_impacto": "Impacto",
+"footer_nav_aliados": "Para aliados",
+"footer_nav_equipo": "Equipo",
+"footer_nav_novedades": "Novedades",
+"footer_newsletter_titulo": "Recibí novedades sobre seguros inclusivos, riesgo climático e inclusión financiera en LATAM.",
+"footer_newsletter_btn": "Suscribirme",
+"footer_copyright": "© 2026 EstaCubierto. Todos los derechos reservados.",
+"ej_form":"Ej: Quiero información sobre seguros para mi cosecha",
+"nota_privacidad":"* Tus datos están protegidos",
+"footer_certificado":"Operado por Varese Brokers SRL",
+"footer_matricula":"Matrícula SSN N° 1405",
+"footer_navegacion_titulo": "Navegación",
+"footer_contacto_titulo": "Contacto"
+}
