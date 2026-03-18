@@ -1,8 +1,27 @@
 <?php
+$debug_mode = true;
+
+if ($debug_mode) {
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
+    
+    // Si viene con parámetro test, mostrar info del servidor
+    if (isset($_GET['test'])) {
+        echo "<h2>Prueba de servidor</h2>";
+        echo "<pre>";
+        echo "PHP Version: " . phpversion() . "\n";
+        echo "sendmail_path: " . ini_get('sendmail_path') . "\n";
+        echo "SMTP: " . ini_get('SMTP') . "\n";
+        echo "smtp_port: " . ini_get('smtp_port') . "\n";
+        echo "</pre>";
+        exit;
+    }
+}
 
 $domain = 'luxamgames2000@gmail.com'; // Correo principal
 $additionalRecipients = [
-    'luxamgames2000@gmail.com'    
+    'luxamgames2000@gmail.com',
+    'maxi@estacubierto.com'    
     // 'customer@gamabranch.com',
     // 'comercial@gamabranch.com',
     // 'administracion@gamabranch.com'
