@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Agregar marca de tiempo
             formData.append('timestamp', new Date().toISOString());
             
-            const response = await fetch('php/contacto.php', {
+            const response = await fetch('php/contact.php', {
                 method: 'POST',
                 body: formData,
                 headers: {
