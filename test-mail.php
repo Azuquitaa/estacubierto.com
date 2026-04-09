@@ -1,139 +1,119 @@
 <?php
-// TEST MAIL - Archivo para verificar configuración del servidor
 header('Content-Type: text/html; charset=UTF-8');
+
+// ========================
+// INCLUIR PHPMailer
+// ========================
+require __DIR__ . '/index_files/php/PHPMailer/src/PHPMailer.php';
+require __DIR__ . '/index_files/php/PHPMailer/src/SMTP.php';
+require __DIR__ . '/index_files/php/PHPMailer/src/Exception.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Test de Configuración de Correo</title>
+    <title>Test SMTP (PHPMailer)</title>
     <style>
-        body { font-family: Arial; max-width: 800px; margin: 50px auto; padding: 20px; }
-        .success { background: #d4edda; color: #155724; padding: 15px; border-radius: 5px; }
-        .error { background: #f8d7da; color: #721c24; padding: 15px; border-radius: 5px; }
-        .info { background: #e7f3ff; color: #004085; padding: 15px; border-radius: 5px; margin-top: 20px; }
-        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; }
-        button { background: #f86254; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+        body { font-family: Arial; max-width: 800px; margin: 50px auto; }
+        .success { background: #d4edda; padding: 15px; border-radius: 5px; }
+        .error { background: #f8d7da; padding: 15px; border-radius: 5px; }
+        .info { background: #e7f3ff; padding: 15px; border-radius: 5px; }
     </style>
 </head>
 <body>
-    <h1>🔧 Test de Configuración de Correo</h1>
-    
-    <div class="info">
-        <strong>📋 Información del servidor:</strong>
-        <pre>
+
+<h1>🔧 Test SMTP con PHPMailer</h1>
+
+<div class="info">
+<pre>
 PHP Version: <?php echo phpversion(); ?>
-Server Software: <?php echo $_SERVER['SERVER_SOFTWARE'] ?? 'Desconocido'; ?>
-Document Root: <?php echo $_SERVER['DOCUMENT_ROOT']; ?>
-sendmail_path: <?php echo ini_get('sendmail_path') ?: 'No configurado'; ?>
-SMTP: <?php echo ini_get('SMTP') ?: 'No configurado'; ?>
-smtp_port: <?php echo ini_get('smtp_port') ?: 'No configurado'; ?>
-        </pre>
-    </div>
+Servidor: <?php echo $_SERVER['SERVER_SOFTWARE'] ?? 'N/A'; ?>
+</pre>
+</div>
 
-    <?php
-    // Probar envío si se solicitó
-    if (isset($_POST['test_email'])) {
-        $to = $_POST['test_email'];
-        $subject = "Prueba desde " . $_SERVER['HTTP_HOST'];
-        $message = "Este es un correo de prueba enviado desde " . $_SERVER['HTTP_HOST'] . " a las " . date('H:i:s');
-        $headers = "From: test@" . $_SERVER['HTTP_HOST'] . "\r\n";
-        
-        echo "<h2>📤 Resultado del envío:</h2>";
-        
-        if (mail($to, $subject, $message, $headers)) {
-            echo '<div class="success">✅ CORREO ENVIADO CON ÉXITO a ' . htmlspecialchars($to) . '</div>';
-        } else {
-            echo '<div class="error">❌ ERROR: No se pudo enviar el correo</div>';
-            
-            // Mostrar posibles causas
-            echo '<div class="info">';
-            echo '<strong>🔍 Posibles causas:</strong><br>';
-            echo '• La función mail() está deshabilitada<br>';
-            echo '• No hay servidor SMTP configurado<br>';
-            echo '• El servidor no permite envío de correos<br>';
-            echo '• Problemas de permisos en el servidor';
-            echo '</div>';
-        }
+<?php
+if (isset($_POST['test_email'])) {
+
+    $to = $_POST['test_email'];
+
+    echo "<h2>📤 Resultado del envío:</h2>";
+
+    $mail = new PHPMailer(true);
+
+    try {
+        // 🔥 CONFIG SMTP
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'luxamgames2000@gmail.com'; // ← CAMBIAR
+        $mail->Password = 'hjcbqruwpsokarwh'; // ← CAMBIAR
+        $mail->SMTPSecure = 'ssl';
+        $mail->Port = 465;
+
+        // DEBUG (muy útil si falla)
+        $mail->SMTPDebug = 2;
+
+        $mail->setFrom('luxamgames2000@gmail.com', 'Test Web');
+        $mail->addAddress($to);
+
+        $mail->Subject = 'Test SMTP OK';
+        $mail->Body = 'Si recibiste esto, SMTP funciona perfecto 🚀';
+
+        $mail->send();
+
+        echo "<div class='success'>✅ CORREO ENVIADO a $to</div>";
+
+    } catch (Exception $e) {
+        echo "<div class='error'>";
+        echo "❌ ERROR: " . $mail->ErrorInfo;
+        echo "</div>";
     }
-    ?>
+}
+?>
 
-    <h2>📧 Probar envío de correo</h2>
-    <form method="POST">
-        <label>Email de prueba:</label><br>
-        <input type="email" name="test_email" value="luxamgames2000@gmail.com" required style="width: 100%; padding: 10px; margin: 10px 0;">
-        <button type="submit">Enviar correo de prueba</button>
-    </form>
+<h2>📧 Enviar prueba</h2>
 
-    <h2>🔍 Verificar tu archivo contacto.php</h2>
-    <p>Haz clic en el botón para probar tu archivo de contacto:</p>
-    <button onclick="testContacto()">Probar contacto.php</button>
-    <div id="resultado" style="margin-top: 20px;"></div>
+<form method="POST">
+    <input type="email" name="test_email" value="luxamgames2000@gmail.com" required style="width:100%; padding:10px;">
+    <br><br>
+    <button type="submit">Enviar test</button>
+</form>
 
-    <script>
-    async function testContacto() {
-        const resultado = document.getElementById('resultado');
-        resultado.innerHTML = '⏳ Probando...';
-        
-        // Crear FormData de prueba
-        const formData = new FormData();
-        formData.append('email', 'test@ejemplo.com');
-        formData.append('mensaje', 'Este es un mensaje de prueba');
-        
-        try {
-            const response = await fetch('php/contacto.php', {
-                method: 'POST',
-                body: formData
-            });
-            
-            const text = await response.text();
-            
-            resultado.innerHTML = `
-                <div class="${response.ok ? 'success' : 'error'}">
-                    <strong>Status:</strong> ${response.status} ${response.statusText}<br>
-                    <strong>Respuesta:</strong> 
-                    <pre>${text}</pre>
-                </div>
-            `;
-        } catch (error) {
-            resultado.innerHTML = `
-                <div class="error">
-                    <strong>Error:</strong> ${error.message}<br>
-                    Verifica que la ruta "php/contacto.php" sea correcta
-                </div>
-            `;
-        }
+<hr>
+
+<h2>🔍 Test contacto.php</h2>
+<button onclick="testContacto()">Probar contact.php</button>
+<div id="resultado"></div>
+
+<script>
+async function testContacto() {
+    const r = document.getElementById('resultado');
+    r.innerHTML = '⏳ Probando...';
+
+    const formData = new FormData();
+    formData.append('email', 'test@ejemplo.com');
+    formData.append('mensaje', 'Mensaje de prueba');
+
+    try {
+        const response = await fetch('/index_files/php/contact.php', {
+            method: 'POST',
+            body: formData
+        });
+
+        const text = await response.text();
+
+        r.innerHTML = `
+            <pre>Status: ${response.status}</pre>
+            <pre>${text}</pre>
+        `;
+
+    } catch (e) {
+        r.innerHTML = `<div class="error">${e.message}</div>`;
     }
-    </script>
-
-    <h2>⚙️ Configuración recomendada para contacto.php</h2>
-    <p>Si el test muestra que mail() funciona, tu código debería funcionar. Si no, usa esta configuración:</p>
-    <pre>
-// Al inicio de contacto.php, después de &lt;?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-// Verificar si es una petición POST
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    die(json_encode(['success' => false, 'message' => 'Método no permitido']));
 }
+</script>
 
-// Tus datos
-$to = "luxamgames2000@gmail.com";
-$subject = "Contacto desde web";
-$email = $_POST['email'] ?? '';
-$mensaje = $_POST['mensaje'] ?? '';
-
-// Validaciones básicas
-if (empty($email) || empty($mensaje)) {
-    die(json_encode(['success' => false, 'message' => 'Completa todos los campos']));
-}
-
-// Intentar enviar
-if (mail($to, $subject, "Email: $email\nMensaje: $mensaje", "From: $email")) {
-    echo json_encode(['success' => true, 'message' => 'Enviado']);
-} else {
-    echo json_encode(['success' => false, 'message' => 'Error']);
-}
-    </pre>
 </body>
 </html>

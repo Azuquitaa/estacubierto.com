@@ -1,137 +1,154 @@
 <?php
+
+// ========================
+// CONFIGURACIÓN INICIAL
+// ========================
+
 $debug_mode = true;
 
 if ($debug_mode) {
     ini_set('display_errors', 1);
     error_reporting(E_ALL);
-    
-    // Si viene con parámetro test, mostrar info del servidor
+
     if (isset($_GET['test'])) {
         echo "<h2>Prueba de servidor</h2>";
         echo "<pre>";
         echo "PHP Version: " . phpversion() . "\n";
-        echo "sendmail_path: " . ini_get('sendmail_path') . "\n";
-        echo "SMTP: " . ini_get('SMTP') . "\n";
-        echo "smtp_port: " . ini_get('smtp_port') . "\n";
         echo "</pre>";
         exit;
     }
 }
 
-$domain = 'luxamgames2000@gmail.com'; // Correo principal
+// ========================
+// INCLUIR PHPMailer
+// ========================
+
+require __DIR__ . '/PHPMailer/src/PHPMailer.php';
+require __DIR__ . '/PHPMailer/src/SMTP.php';
+require __DIR__ . '/PHPMailer/src/Exception.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+// ========================
+// CONFIGURACIÓN GENERAL
+// ========================
+
+$domain = 'luxamgames2000@gmail.com';
+
 $additionalRecipients = [
     'luxamgames2000@gmail.com',
-    'maxi@estacubierto.com'    
-    // 'customer@gamabranch.com',
-    // 'comercial@gamabranch.com',
-    // 'administracion@gamabranch.com'
+    // 'maxi@estacubierto.com'
 ];
 
-// Configuración inicial
+// Respuesta JSON
 header('Content-Type: application/json; charset=UTF-8');
 
-// Habilitar registro de errores
+// Log de errores
 ini_set('log_errors', 1);
 ini_set('error_log', __DIR__.'/debug.log');
 
-// Registrar solicitud entrante
 error_log("\n\n[NUEVA SOLICITUD] ".date('Y-m-d H:i:s')." ".$_SERVER['REMOTE_ADDR']);
 
-// 1. Validar método HTTP
+// ========================
+// VALIDAR MÉTODO
+// ========================
+
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    $error = 'Método no permitido';
-    error_log("[ERROR] $error");
     http_response_code(405);
-    die(json_encode(['success' => false, 'message' => $error]));
+    die(json_encode(['success' => false, 'message' => 'Método no permitido']));
 }
 
-// 2. Obtener y registrar datos
+// ========================
+// OBTENER DATOS
+// ========================
+
 $data = [
     'email' => filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL),
     'mensaje' => trim(htmlspecialchars($_POST['mensaje'] ?? ''))
 ];
 
-error_log("[DATOS PROCESADOS] ".print_r($data, true));
-
-// 3. Validar campos
+// Validaciones
 $errors = [];
 
 if (empty($data['email'])) {
-    $errors[] = "El campo email es requerido";
+    $errors[] = "El email es requerido";
 } elseif (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
     $errors[] = "Email no válido";
 }
 
 if (empty($data['mensaje'])) {
-    $errors[] = "El campo mensaje es requerido";
+    $errors[] = "El mensaje es requerido";
 }
 
 if (!empty($errors)) {
-    $errorMsg = implode(', ', $errors);
-    error_log("[ERROR VALIDACIÓN] $errorMsg");
     http_response_code(400);
-    die(json_encode(['success' => false, 'message' => $errorMsg]));
+    die(json_encode(['success' => false, 'message' => implode(', ', $errors)]));
 }
 
-// 4. Configurar correo
-$subject = "Contacto desde Estacubierto - " . date('d/m/Y'); // ¡FALTABA ESTA LÍNEA!
+// ========================
+// ARMAR MENSAJE
+// ========================
+
+$subject = "Contacto desde Estacubierto - " . date('d/m/Y');
 
 $message = "Detalles del contacto:\n\n";
 $message .= "Email: {$data['email']}\n";
-$message .= "Mensaje:\n{$data['mensaje']}\n";
-$message .= "\n---\n";
+$message .= "Mensaje:\n{$data['mensaje']}\n\n";
 $message .= "Enviado: " . date('d/m/Y H:i:s');
 
-$headers = [
-    'From' => "no-reply@estacubierto.com",
-    'Reply-To' => $data['email'],
-    'X-Mailer' => 'PHP/'.phpversion(),
-    'Content-Type' => 'text/plain; charset=UTF-8'
-];
+// ========================
+// ENVÍO CON PHPMailer
+// ========================
 
-$headersString = '';
-foreach ($headers as $key => $value) {
-    $headersString .= "$key: $value\r\n";
+$allRecipients = array_merge([$domain], $additionalRecipients);
+$successCount = 0;
+
+foreach ($allRecipients as $recipient) {
+
+    $mail = new PHPMailer(true);
+
+    try {
+        // CONFIG SMTP
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'luxamgames2000@gmail.com'; // ← CAMBIAR
+        $mail->Password = 'hjcbqruwpsokarwh'; // ← CAMBIAR
+        $mail->SMTPSecure = 'ssl';
+        $mail->Port = 465;
+
+        // REMITENTE Y DESTINO
+        $mail->setFrom('luxamgames2000@gmail.com', 'Web Estacubierto');
+        $mail->addAddress($recipient);
+
+        // CONTENIDO
+        $mail->Subject = $subject;
+        $mail->Body = $message;
+
+        $mail->send();
+        $successCount++;
+
+        error_log("[OK] Enviado a $recipient");
+
+    } catch (Exception $e) {
+        error_log("[ERROR] $recipient -> " . $mail->ErrorInfo);
+    }
 }
 
-error_log("[CONFIG CORREO] To: $domain\nSubject: $subject");
+// ========================
+// RESPUESTA FINAL
+// ========================
 
-// 5. Intento de envío
-try {
-    error_log("[INTENTO ENVÍO] Iniciando envío...");
-    
-    // Lista completa de destinatarios (principal + adicionales)
-    $allRecipients = array_merge([$domain], $additionalRecipients);
-    $successCount = 0;
-    
-    foreach ($allRecipients as $recipient) {
-        error_log("[ENVIANDO A] $recipient");
-        $mailSent = mail($recipient, $subject, $message, $headersString);
-        
-        if ($mailSent) {
-            $successCount++;
-            error_log("[ENVÍO EXITOSO] Correo enviado a $recipient");
-        } else {
-            error_log("[FALLO ENVÍO] Falló el envío a $recipient");
-        }
-    }
-    
-    if ($successCount > 0) {
-        echo json_encode([
-            'success' => true,
-            'message' => 'Mensaje enviado con éxito. ¡Gracias por contactarnos!'
-        ]);
-    } else {
-        throw new Exception('Todos los intentos de envío fallaron');
-    }
-    
-} catch (Exception $e) {
-    $errorMsg = 'Error al enviar el correo: '.$e->getMessage();
-    error_log("[ERROR ENVÍO] $errorMsg");
+if ($successCount > 0) {
+    echo json_encode([
+        'success' => true,
+        'message' => 'Mensaje enviado correctamente'
+    ]);
+} else {
     http_response_code(500);
     echo json_encode([
         'success' => false,
-        'message' => 'Error al enviar el mensaje. Por favor intente nuevamente más tarde.'
+        'message' => 'No se pudo enviar el mensaje'
     ]);
 }
-?>

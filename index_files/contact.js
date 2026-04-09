@@ -1,4 +1,5 @@
 // formulario de contacto - VERSIÓN CORREGIDA
+
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('formContacto');
     if (!form) return; // Si no existe el formulario, salir
@@ -24,14 +25,15 @@ document.addEventListener('DOMContentLoaded', function() {
             // Agregar marca de tiempo
             formData.append('timestamp', new Date().toISOString());
             
-            const response = await fetch('php/contact.php', {
+            const response = await fetch('/index_files/php/contact.php', {
                 method: 'POST',
                 body: formData,
                 headers: {
                     'X-Requested-With': 'XMLHttpRequest'
                 }
             });
-            
+            console.log("📡 aaaa Response status:", response.status);
+            console.log("📡 Response headers:", response.headers);
             // Verificar si la respuesta es JSON
             let data;
             const contentType = response.headers.get('content-type');
